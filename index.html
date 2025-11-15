@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
 
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
@@ -78,24 +78,164 @@
         <p class="section-subtitle">Discover the most exciting <span class="text-lime">Gaming Titles</span> <br>Ready to Play</p>
       </div>
 
-      <div class="games-carousel-wrapper">
-        <div class="games-carousel">
-          <div class="row g-4" id="gamesContainer"></div>
-        </div>
-
-
-        <div class="carousel-bottom">
-          <div class="carousel-controls">
-            <button class="carousel-arrow prev" id="prevBtn">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="carousel-arrow next" id="nextBtn">
-              <i class="fas fa-chevron-right"></i>
-            </button>
+      <div class="carousel slide" id="gamesCarousel" data-bs-ride="false" data-bs-interval="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6">
+                <div class="card latest-card">
+                  <div class="card-image-wrapper">
+                    <img src="images/latest-games-1.png" class="card-img-top" alt="Alien Companions">
+                    <div class="card-overlay">
+                      <div class="overlay-content">
+                        <div class="game-tags">
+                          <span class="tag"><i class="fas fa-gamepad"></i> ADVENTURE</span>
+                          <span class="tag"><i class="fas fa-users"></i> MULTIPLAYER</span>
+                        </div>
+                        <h5 class="overlay-title">Alien Companions</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="card latest-card">
+                  <div class="card-image-wrapper">
+                    <img src="images/latest-games-2.png" class="card-img-top" alt="Cyber Run 2099">
+                    <div class="card-overlay">
+                      <div class="overlay-content">
+                        <div class="game-tags">
+                          <span class="tag"><i class="fas fa-fire"></i> ACTION</span>
+                          <span class="tag"><i class="fas fa-bolt"></i> GEFORCE</span>
+                        </div>
+                        <h5 class="overlay-title">Cyber Run 2099</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="card latest-card">
+                  <div class="card-image-wrapper">
+                    <img src="images/latest-games-3.png" class="card-img-top" alt="Aetheria Chronicles">
+                    <div class="card-overlay">
+                      <div class="overlay-content">
+                        <div class="game-tags">
+                          <span class="tag"><i class="fas fa-gun"></i> SHOOTER</span>
+                          <span class="tag"><i class="fas fa-handshake"></i> CO-OP</span>
+                        </div>
+                        <h5 class="overlay-title">Aetheria Chronicles</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          
-          <a class="btn btn-view-all" href="#">VIEW ALL GAMES</a>
+
+          <div class="carousel-item">
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6">
+                <div class="card latest-card">
+                  <div class="card-image-wrapper">
+                    <img src="images/latest-games-4.png" class="card-img-top" alt="Warfront Protocol">
+                    <div class="card-overlay">
+                      <div class="overlay-content">
+                        <div class="game-tags">
+                          <span class="tag"><i class="fas fa-futbol"></i> FOOTBALL</span>
+                          <span class="tag"><i class="fas fa-wand-magic-sparkles"></i> FANTASY</span>
+                        </div>
+                        <h5 class="overlay-title">Warfront Protocol</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="card latest-card">
+                  <div class="card-image-wrapper">
+                    <img src="images/latest-games-5.png" class="card-img-top" alt="Shot Striker">
+                    <div class="card-overlay">
+                      <div class="overlay-content">
+                        <div class="game-tags">
+                          <span class="tag"><i class="fas fa-trophy"></i> SPORTS</span>
+                          <span class="tag"><i class="fas fa-ranking-star"></i> LEAGUE</span>
+                        </div>
+                        <h5 class="overlay-title">Shot Striker</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="card latest-card">
+                  <div class="card-image-wrapper">
+                    <img src="images/latest-games-6.png" class="card-img-top" alt="Epic Gaming League">
+                    <div class="card-overlay">
+                      <div class="overlay-content">
+                        <div class="game-tags">
+                          <span class="tag"><i class="fas fa-rocket"></i> SPACE</span>
+                          <span class="tag"><i class="fas fa-compass"></i> EXPLORATION</span>
+                        </div>
+                        <h5 class="overlay-title">Epic Gaming League</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6">
+                <div class="card latest-card">
+                  <div class="card-image-wrapper">
+                    <img src="images/latest-games-7.png" class="card-img-top" alt="Barren Alien Worlds">
+                    <div class="card-overlay">
+                      <div class="overlay-content">
+                        <div class="game-tags">
+                          <span class="tag"><i class="fas fa-explosion"></i> ACTION</span>
+                          <span class="tag"><i class="fas fa-microchip"></i> FUTURISTIC</span>
+                        </div>
+                        <h5 class="overlay-title">Barren Alien Worlds</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="card latest-card">
+                  <div class="card-image-wrapper">
+                    <img src="images/latest-games-8.png" class="card-img-top" alt="Cloveland Quest">
+                    <div class="card-overlay">
+                      <div class="overlay-content">
+                        <div class="game-tags">
+                          <span class="tag"><i class="fas fa-map"></i> ADVENTURE</span>
+                          <span class="tag"><i class="fas fa-users"></i> MULTIPLAYER</span>
+                        </div>
+                        <h5 class="overlay-title">Cloveland Quest</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="carousel-controls">
+        <button class="carousel-arrow prev" type="button" data-bs-target="#gamesCarousel" data-bs-slide="prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="carousel-arrow next" type="button" data-bs-target="#gamesCarousel" data-bs-slide="next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div class="carousel-bottom">
+        <a class="btn btn-view-all" href="#">VIEW ALL GAMES</a>
       </div>
     </div>
   </section>
@@ -296,7 +436,7 @@
       </div>
 
       <div class="row g-4">
-        <div c-3 col-md-6">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="avatar-wrap">
             <img src="images/avatar-2.png" class="team-avatar" alt="avatar">
             <div class="avatar-overlay">
@@ -310,7 +450,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="avatar-wrap">
             <img src="images/avatar-3.png" class="team-avatar" alt="avatar">
             <div class="avatar-overlay">
@@ -324,7 +464,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="avatar-wrap">
             <img src="images/avatar-4.png" class="team-avatar" alt="avatar">
             <div class="avatar-overlay">
@@ -338,7 +478,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="avatar-wrap">
             <img src="images/avatar-5.png" class="team-avatar" alt="avatar">
             <div class="avatar-overlay">
@@ -352,7 +492,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="avatar-wrap">
             <img src="images/avatar-6.png" class="team-avatar" alt="avatar">
             <div class="avatar-overlay">
@@ -366,7 +506,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="avatar-wrap">
             <img src="images/avatar-7.png" class="team-avatar" alt="avatar">
             <div class="avatar-overlay">
@@ -380,7 +520,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="avatar-wrap">
             <img src="images/avatar-8.png" class="team-avatar" alt="avatar">
             <div class="avatar-overlay">
@@ -394,7 +534,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6">
+        <div class="col-12 col-sm-6 col-lg-3">
           <div class="avatar-wrap">
             <img src="images/avatar-1.png" class="team-avatar" alt="avatar">
             <div class="avatar-overlay">
@@ -573,77 +713,5 @@
   </footer>
 
   <script src="js/bootstrap.bundle.min.js"></script>
-  
-  <script>
-    const games = [
-      { name: "Alien Companions", tag: "ADVENTURE • MULTIPLAYER", icons: ["gamepad", "users"], img: "latest-games-1.png" },
-      { name: "Cyber Run 2099", tag: "ACTION • GEFORCE", icons: ["fire", "bolt"], img: "latest-games-2.png" },
-      { name: "Aetheria Chronicles", tag: "SHOOTER • CO-OP", icons: ["gun", "handshake"], img: "latest-games-3.png" },
-      { name: "Warfront Protocol", tag: "FOOTBALL • FANTASY", icons: ["futbol", "wand-magic-sparkles"], img: "latest-games-4.png" },
-      { name: "Shot Striker", tag: "SPORTS • LEAGUE", icons: ["trophy", "ranking-star"], img: "latest-games-5.png" },
-      { name: "Epic Gaming League", tag: "SPACE • EXPLORATION", icons: ["rocket", "compass"], img: "latest-games-6.png" },
-      { name: "Barren Alien Worlds", tag: "ACTION • FUTURISTIC", icons: ["explosion", "microchip"], img: "latest-games-7.png" },
-      { name: "Cloveland Quest", tag: "ADVENTURE • MULTIPLAYER", icons: ["map", "users"], img: "latest-games-8.png" }
-    ];
-
-    let currentIndex = 0;
-
-    function getCardsPerView(){
-      const w = window.innerWidth;
-      if (w >= 992) return 3; // large and up
-      if (w >= 768) return 2; // medium
-      return 1; // small
-    }
-
-    function renderGames() {
-      const container = document.getElementById('gamesContainer');
-      container.innerHTML = '';
-      const cardsPerView = getCardsPerView();
-
-      for (let i = 0; i < cardsPerView; i++) {
-        const gameIndex = (currentIndex + i) % games.length;
-        const game = games[gameIndex];
-
-        container.innerHTML += `
-          <div class="col-lg-${12 / Math.min(cardsPerView,3)} col-md-6">
-            <div class="card latest-card">
-              <div class="card-image-wrapper">
-                <img src="images/${game.img}" class="card-img-top" alt="${game.name}">
-                <div class="card-overlay">
-                  <div class="overlay-content">
-                    <div class="game-tags">
-                      <span class="tag"><i class="fas fa-${game.icons[0]}"></i> ${game.tag.split('•')[0].trim()}</span>
-                      <span class="tag"><i class="fas fa-${game.icons[1]}"></i> ${game.tag.split('•')[1].trim()}</span>
-                    </div>
-                    <h5 class="overlay-title">${game.name}</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        `;
-      }
-    }
-
-    document.getElementById('prevBtn').addEventListener('click', () => {
-      const step = getCardsPerView();
-      currentIndex = (currentIndex - step + games.length) % games.length;
-      renderGames();
-    });
-
-    document.getElementById('nextBtn').addEventListener('click', () => {
-      const step = getCardsPerView();
-      currentIndex = (currentIndex + step) % games.length;
-      renderGames();
-    });
-
-    window.addEventListener('resize', () => {
-      // keep currentIndex in bounds and re-render when viewport changes
-      currentIndex = currentIndex % games.length;
-      renderGames();
-    });
-
-    renderGames();
-  </script>
 </body>
 </html>
